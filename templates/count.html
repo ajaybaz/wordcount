@@ -1,0 +1,18 @@
+
+<a href="{% url 'home'%}">Back Home</a>
+<h1>Counted Word</h1>
+{{key}}
+<br/><br/><br/>
+<h1>your word</h1>
+{{ key1 }}
+<br/><br/><br/>
+<h1>Word lenght</h1>
+{{ lenght }}
+<br/><br/><br/>
+{{ array }}
+<br/><br/><br/>
+
+{% for key, value in array%}
+<font color= "red">{{key}} </font> = <font color= "blue"> {{value}}</font>
+<br/>
+{%endfor%}

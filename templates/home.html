@@ -1,0 +1,15 @@
+<a href="{% url 'about'%}">About</a>
+<h1>Word Count</h1>
+<h2>This is Word Count Site</h2>
+</br>
+
+<h1><b>{{key}}
+
+
+<!-- <form class="" action="index.html" method="post"> -->
+<form action="{% url  'count1' %}">
+  <textarea name="textname" rows="8" cols="80"></textarea>
+    </br>
+<input type="submit" name="Count" value="Count">
+
+</form>
